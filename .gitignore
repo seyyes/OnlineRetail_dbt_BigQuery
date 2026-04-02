@@ -1,0 +1,14 @@
+# dbt
+target/
+dbt_packages/
+
+# Python
+__pycache__/
+
+# Secrets
+.env
+*.json
+
+# Mac / VSCode
+.DS_Store
+.vscode/

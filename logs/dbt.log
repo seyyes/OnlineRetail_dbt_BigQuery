@@ -1,0 +1,185 @@
+[0m22:01:57.468086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF76D4DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF899BC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF899BEB0>]}
+
+
+============================== 22:01:57.475369 | f3206aba-812b-443c-9073-ebba92318786 ==============================
+[0m22:01:57.475369 [info ] [MainThread]: Running with dbt=1.11.7
+[0m22:01:57.475369 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\seynabou\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\seynabou\\Documents\\OnlineRetail\\OnlineRetail_dbt_Transform\\logs'}
+[0m22:01:57.519190 [info ] [MainThread]: dbt version: 1.11.7
+[0m22:01:57.519190 [info ] [MainThread]: python version: 3.10.10
+[0m22:01:57.519190 [info ] [MainThread]: python path: C:\Users\seynabou\AppData\Local\Programs\Python\Python310\python.exe
+[0m22:01:57.519190 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:01:58.891618 [info ] [MainThread]: Using profiles dir at C:\Users\seynabou\.dbt
+[0m22:01:58.891618 [info ] [MainThread]: Using profiles.yml file at C:\Users\seynabou\.dbt\profiles.yml
+[0m22:01:58.891618 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\dbt_project.yml
+[0m22:01:58.891618 [info ] [MainThread]: adapter type: bigquery
+[0m22:01:58.891618 [info ] [MainThread]: adapter version: 1.11.1
+[0m22:01:59.025355 [info ] [MainThread]: Configuration:
+[0m22:01:59.025355 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:01:59.025355 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:01:59.041200 [info ] [MainThread]: Required dependencies:
+[0m22:01:59.041200 [debug] [MainThread]: Executing "git --help"
+[0m22:01:59.098978 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:01:59.100077 [debug] [MainThread]: STDERR: "b''"
+[0m22:01:59.100077 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:01:59.101547 [info ] [MainThread]: Connection:
+[0m22:01:59.101547 [info ] [MainThread]:   method: service-account
+[0m22:01:59.102603 [info ] [MainThread]:   database: onlineretail-491719
+[0m22:01:59.103762 [info ] [MainThread]:   execution_project: onlineretail-491719
+[0m22:01:59.103762 [info ] [MainThread]:   schema: ecommerce_raw
+[0m22:01:59.104924 [info ] [MainThread]:   location: US
+[0m22:01:59.105925 [info ] [MainThread]:   priority: interactive
+[0m22:01:59.105925 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:01:59.107268 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:01:59.108376 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:01:59.109874 [info ] [MainThread]:   job_retries: 1
+[0m22:01:59.111099 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:01:59.111099 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:01:59.112120 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:01:59.113122 [info ] [MainThread]:   client_id: None
+[0m22:01:59.114281 [info ] [MainThread]:   token_uri: None
+[0m22:01:59.114281 [info ] [MainThread]:   compute_region: None
+[0m22:01:59.118376 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:01:59.118376 [info ] [MainThread]:   gcs_bucket: None
+[0m22:01:59.120020 [info ] [MainThread]:   dataproc_batch: None
+[0m22:01:59.121067 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m22:01:59.627979 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:01:59.627979 [debug] [MainThread]: On debug: select 1 as id
+[0m22:01:59.627979 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:02:00.887997 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:52cf1da0-8387-4a4d-ba47-5ed8c743457a&page=queryresults
+[0m22:02:01.164674 [debug] [MainThread]: SQL status: OK in 0.282 seconds
+[0m22:02:01.583723 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:02:01.590026 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:02:01.594039 [debug] [MainThread]: Command `dbt debug` succeeded at 22:02:01.594039 after 4.32 seconds
+[0m22:02:01.594039 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:02:01.594039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF76D4DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF79A45E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE89CBCD90>]}
+[0m22:02:01.600738 [debug] [MainThread]: Flushing usage events
+[0m22:02:02.001389 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:02:13.792090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB55724E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB569F3C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB569F3E50>]}
+
+
+============================== 22:02:13.796789 | fce41860-8e96-49c3-98b8-0168a888a346 ==============================
+[0m22:02:13.796789 [info ] [MainThread]: Running with dbt=1.11.7
+[0m22:02:13.797368 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\seynabou\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\seynabou\\Documents\\OnlineRetail\\OnlineRetail_dbt_Transform\\logs'}
+[0m22:02:15.469151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB569F3DF0>]}
+[0m22:02:15.553087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB56977BE0>]}
+[0m22:02:15.553087 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m22:02:16.113320 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m22:02:16.113320 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:02:16.113320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB67ACA560>]}
+[0m22:02:18.085537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB68FC8AC0>]}
+[0m22:02:18.212570 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m22:02:18.215312 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m22:02:18.257361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB69355030>]}
+[0m22:02:18.258415 [info ] [MainThread]: Found 2 models, 4 data tests, 538 macros
+[0m22:02:18.259015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB69354FA0>]}
+[0m22:02:18.261328 [info ] [MainThread]: 
+[0m22:02:18.261328 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:02:18.262489 [info ] [MainThread]: 
+[0m22:02:18.263768 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:02:18.265627 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719'
+[0m22:02:18.265627 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:18.696357 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719_ecommerce_raw'
+[0m22:02:18.697357 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:19.147065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB532BFF70>]}
+[0m22:02:19.156842 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:02:19.202962 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.my_first_dbt_model
+[0m22:02:19.203963 [info ] [Thread-1 (]: 1 of 2 START sql table model ecommerce_raw.my_first_dbt_model .................. [RUN]
+[0m22:02:19.203963 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.my_first_dbt_model'
+[0m22:02:19.205435 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.my_first_dbt_model
+[0m22:02:19.215408 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.my_first_dbt_model"
+[0m22:02:19.218400 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.my_first_dbt_model
+[0m22:02:19.259280 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.my_first_dbt_model"
+[0m22:02:19.272426 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `onlineretail-491719`.`ecommerce_raw`.`my_first_dbt_model`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m22:02:19.274231 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:02:20.477982 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:962ed767-a55c-435b-b5aa-6604130407fb&page=queryresults
+[0m22:02:22.305366 [debug] [Thread-1 (]: SQL status: OK in 1.816 seconds
+[0m22:02:22.683840 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB679FEDA0>]}
+[0m22:02:22.683840 [info ] [Thread-1 (]: 1 of 2 OK created sql table model ecommerce_raw.my_first_dbt_model ............. [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.48s]
+[0m22:02:22.683840 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.my_first_dbt_model
+[0m22:02:22.699290 [debug] [Thread-3 (]: Began running node model.OnlineRetail_dbt_Transform.my_second_dbt_model
+[0m22:02:22.699290 [info ] [Thread-3 (]: 2 of 2 START sql view model ecommerce_raw.my_second_dbt_model .................. [RUN]
+[0m22:02:22.699290 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.my_second_dbt_model'
+[0m22:02:22.699290 [debug] [Thread-3 (]: Began compiling node model.OnlineRetail_dbt_Transform.my_second_dbt_model
+[0m22:02:22.699290 [debug] [Thread-3 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.my_second_dbt_model"
+[0m22:02:22.699290 [debug] [Thread-3 (]: Began executing node model.OnlineRetail_dbt_Transform.my_second_dbt_model
+[0m22:02:22.733113 [debug] [Thread-3 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.my_second_dbt_model"
+[0m22:02:22.734525 [debug] [Thread-3 (]: On model.OnlineRetail_dbt_Transform.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.my_second_dbt_model"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `onlineretail-491719`.`ecommerce_raw`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m22:02:22.734525 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:02:23.353082 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:f8122535-ab27-43a2-96c3-a5043fb2ec6d&page=queryresults
+[0m22:02:23.850973 [debug] [Thread-3 (]: SQL status: OK in 0.498 seconds
+[0m22:02:23.867330 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce41860-8e96-49c3-98b8-0168a888a346', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB697C7CD0>]}
+[0m22:02:23.867330 [info ] [Thread-3 (]: 2 of 2 OK created sql view model ecommerce_raw.my_second_dbt_model ............. [[32mCREATE VIEW (0 processed)[0m in 1.17s]
+[0m22:02:23.867330 [debug] [Thread-3 (]: Finished running node model.OnlineRetail_dbt_Transform.my_second_dbt_model
+[0m22:02:23.880251 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:02:23.916321 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:02:23.916321 [debug] [MainThread]: Connection 'list_onlineretail-491719' was properly closed.
+[0m22:02:23.916321 [debug] [MainThread]: Connection 'list_onlineretail-491719_ecommerce_raw' was properly closed.
+[0m22:02:23.916321 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.my_first_dbt_model' was properly closed.
+[0m22:02:23.916321 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.my_second_dbt_model' was properly closed.
+[0m22:02:23.916321 [info ] [MainThread]: 
+[0m22:02:23.931557 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 5.65 seconds (5.65s).
+[0m22:02:23.935872 [debug] [MainThread]: Command end result
+[0m22:02:23.975258 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m22:02:23.978403 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m22:02:23.988906 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\run_results.json
+[0m22:02:23.989907 [info ] [MainThread]: 
+[0m22:02:23.992008 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:02:23.993057 [info ] [MainThread]: 
+[0m22:02:23.994061 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m22:02:23.995106 [debug] [MainThread]: Command `dbt run` succeeded at 22:02:23.995106 after 10.30 seconds
+[0m22:02:23.996146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB55724E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB569F3DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB56977BE0>]}
+[0m22:02:23.996146 [debug] [MainThread]: Flushing usage events
+[0m22:02:24.393848 [debug] [MainThread]: An error was encountered while trying to flush usage events
