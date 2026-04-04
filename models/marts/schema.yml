@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: "Dimension table for products"
+
+    columns:
+
+      - name: stock_code
+        description: "Unique product identifier"
+        tests:
+          - not_null
+          - unique
+
+      - name: description
+        description: "Product description"
+
+  - name: dim_customers
+    description: "Dimension table for customers"
+
+    columns:
+
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests:
+          - not_null
+          - unique
