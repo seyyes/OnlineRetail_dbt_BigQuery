@@ -1,0 +1,46 @@
+
+version: 2
+
+sources:
+  - name: ecommerce_raw
+    database: onlineretail-491719
+    schema: ecommerce_raw
+    description: "Online retail sources"
+    tables:
+      - name: online_retail_2009_2010
+        description: "sales of online retail in 2009 and 2010"
+      - name: online_retail_2010_2011
+        description: "sales of online retail in 2010 and 2011"
+
+models:
+  - name: stg_online_retail
+    description: "Staging table combining both retail datasets with cleaned fields and business flags"
+
+    columns:
+
+      - name: invoice_id
+        description: "Unique invoice identifier"
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Number of items purchased"
+        tests:
+          - not_null
+
+      - name: price
+        description: "Unit price of the product"
+        tests:
+          - not_null
+
+      - name: customer_id
+        description: "Customer identifier (can be null for anonymous users)"
+
+      - name: is_returned
+        description: "True if the transaction is a return"
+
+      - name: is_canceled
+        description: "True if invoice is cancelled"
+
+      - name: is_free_item
+        description: "True if price is zero"
