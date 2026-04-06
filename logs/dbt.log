@@ -14840,3 +14840,1486 @@ having count(*) > 1
 [0m17:43:14.269260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D19DA64D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1AFDA3D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1B14E5990>]}
 [0m17:43:14.270298 [debug] [MainThread]: Flushing usage events
 [0m17:43:14.674468 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:59:03.608185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657FB84DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026501F73BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026501F73DF0>]}
+
+
+============================== 15:59:03.616313 | 51f816a4-fe6e-4e81-bce5-9e89a9c3e27c ==============================
+[0m15:59:03.616313 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:59:03.616313 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\seynabou\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\seynabou\\Documents\\OnlineRetail\\OnlineRetail_dbt_Transform\\logs'}
+[0m15:59:10.742829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026501F73B50>]}
+[0m15:59:10.822217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265015EC580>]}
+[0m15:59:10.822217 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:59:11.616284 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\Analysis\product_returns.sql
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\Analysis\top_products.sql
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\Analysis\at_risk_customers.sql
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\marts\kpi\kpi_customers.sql
+[0m15:59:13.435125 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\marts\business\rfm_segmentation.sql
+[0m15:59:13.841287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514974130>]}
+[0m15:59:14.071662 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m15:59:14.088183 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m15:59:14.151134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514989BA0>]}
+[0m15:59:14.151134 [info ] [MainThread]: Found 13 models, 7 data tests, 2 sources, 654 macros
+[0m15:59:14.151134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265149D51B0>]}
+[0m15:59:14.151134 [info ] [MainThread]: 
+[0m15:59:14.151134 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:59:14.151134 [info ] [MainThread]: 
+[0m15:59:14.166826 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:59:14.182363 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719'
+[0m15:59:14.183396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:14.811562 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719_ecommerce_raw'
+[0m15:59:14.811562 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:15.278662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657DE05090>]}
+[0m15:59:15.278662 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:59:15.326376 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m15:59:15.326376 [info ] [Thread-1 (]: 1 of 11 START sql view model ecommerce_raw.stg_online_retail ................... [RUN]
+[0m15:59:15.326376 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.stg_online_retail'
+[0m15:59:15.326376 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m15:59:15.348502 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.stg_online_retail"
+[0m15:59:15.354286 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m15:59:15.391334 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.stg_online_retail"
+[0m15:59:15.394507 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.stg_online_retail: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.stg_online_retail"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+  OPTIONS()
+  as -- Staging model for online retail data
+
+-- Uniting the 2 source files
+WITH combined_sources AS(
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`online_retail_2009_2010`
+    UNION ALL
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`online_retail_2010_2011`
+),
+-- cleaning, renaming and formating the data   
+cleaned_data AS(
+    SELECT 
+    --Ids
+    CAST(Invoice AS string) AS invoice_id,
+    CAST(StockCode AS string) AS stock_code,
+    CAST(CustomerID AS string) AS customer_id,
+
+    --Text
+    TRIM(Description) AS description,
+    TRIM(Country) AS country,
+
+    --Numeric
+    SAFE_CAST(Quantity AS int64) AS quantity,
+    SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) AS price,   
+    
+    --Date
+    SAFE.PARSE_TIMESTAMP('%m/%d/%y %H:%M', InvoiceDate) AS invoice_datetime,
+
+    --Flags métier
+    CASE 
+    WHEN SAFE_CAST(Quantity AS int64) < 0 THEN TRUE
+    ELSE FALSE
+    END AS is_return,
+
+    CASE 
+    WHEN CAST(Invoice AS string) LIKE 'C%' THEN TRUE
+    ELSE FALSE
+    END AS is_cancelled,
+
+    CASE 
+    WHEN CustomerID IS NULL OR CustomerID = '' THEN TRUE
+    ELSE FALSE
+    END AS is_anonymous_customer,
+
+    CASE 
+    WHEN SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) = 0 THEN TRUE
+    ELSE FALSE
+    END AS is_free_item,
+
+    -- Metrics
+    SAFE_CAST(Quantity AS int64) * SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) AS line_amount
+
+FROM combined_sources
+
+)
+SELECT * FROM cleaned_data;
+
+
+[0m15:59:15.395505 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:59:16.479417 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:c242bff3-cb28-437b-ac21-a14b2a6aa1fc&page=queryresults
+[0m15:59:17.010381 [debug] [Thread-1 (]: SQL status: OK in 0.527 seconds
+[0m15:59:19.975427 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002651498B6A0>]}
+[0m15:59:19.975427 [info ] [Thread-1 (]: 1 of 11 OK created sql view model ecommerce_raw.stg_online_retail .............. [[32mCREATE VIEW (0 processed)[0m in 4.65s]
+[0m15:59:19.975427 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m15:59:19.975427 [debug] [Thread-3 (]: Began running node model.OnlineRetail_dbt_Transform.dim_customers
+[0m15:59:19.975427 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.dim_products
+[0m15:59:19.975427 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.fact_sales
+[0m15:59:19.975427 [info ] [Thread-3 (]: 2 of 11 START sql view model ecommerce_raw.dim_customers ....................... [RUN]
+[0m15:59:19.991219 [info ] [Thread-4 (]: 3 of 11 START sql view model ecommerce_raw.dim_products ........................ [RUN]
+[0m15:59:19.992347 [info ] [Thread-2 (]: 4 of 11 START sql view model ecommerce_raw.fact_sales .......................... [RUN]
+[0m15:59:19.993364 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.dim_customers'
+[0m15:59:19.994367 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.dim_products'
+[0m15:59:19.995528 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.fact_sales'
+[0m15:59:19.995528 [debug] [Thread-3 (]: Began compiling node model.OnlineRetail_dbt_Transform.dim_customers
+[0m15:59:19.996606 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.dim_products
+[0m15:59:19.996606 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.fact_sales
+[0m15:59:20.004323 [debug] [Thread-3 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.dim_customers"
+[0m15:59:20.004323 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.dim_products"
+[0m15:59:20.011376 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.fact_sales"
+[0m15:59:20.011376 [debug] [Thread-3 (]: Began executing node model.OnlineRetail_dbt_Transform.dim_customers
+[0m15:59:20.021318 [debug] [Thread-3 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.dim_customers"
+[0m15:59:20.021318 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.fact_sales
+[0m15:59:20.021318 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.dim_products
+[0m15:59:20.028145 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.fact_sales"
+[0m15:59:20.030588 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.dim_products"
+[0m15:59:20.030588 [debug] [Thread-3 (]: On model.OnlineRetail_dbt_Transform.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.dim_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+  OPTIONS()
+  as WITH source AS(
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+    WHERE customer_id IS NOT NULL AND customer_id != '' --filtrer les clients anonymes
+),
+customers AS (
+    SELECT 
+    customer_id,
+    any_value(country) AS country,
+
+    --activité
+    count(distinct invoice_id) AS nb_orders,
+    sum(quantity) AS total_quantity,
+
+    --valeur
+    sum(line_amount) AS total_revenue,
+    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value,-- éviter division par 0
+
+    --temporalité
+    min(invoice_datetime) AS first_purchase_date,
+    max(invoice_datetime) AS last_purchase_date,
+    date_diff(current_date(), DATE(max(invoice_datetime)), day) AS recency_days
+    FROM source
+    GROUP BY customer_id
+)
+SELECT * FROM customers;
+
+
+[0m15:59:20.030588 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.fact_sales: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.fact_sales"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+)
+SELECT
+    --surrogate key aka primary key   
+    
+    ABS(FARM_FINGERPRINT(
+    CONCAT(
+        COALESCE(CAST(invoice_id AS STRING), ''),
+        COALESCE(stock_code, ''),
+        COALESCE(CAST(invoice_datetime AS STRING), '')
+    )
+)) AS transaction_id,
+
+    --business keys
+    invoice_id,
+    stock_code,
+    customer_id,
+
+    --dimensions
+    date(invoice_datetime) AS invoice_date,
+    country,
+
+    --metrics
+    quantity,
+    price,
+    line_amount,
+
+    --flags métier
+    is_return,
+    is_cancelled,    
+    is_free_item
+
+FROM source;
+
+
+[0m15:59:20.030588 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:59:20.030588 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:59:20.030588 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.dim_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.dim_products"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+),
+cleaned_source AS (-- car stockcode + description n'est pas une combinaison unique
+    SELECT 
+    stock_code,
+    description,
+    price,
+    customer_id,
+    invoice_datetime
+    FROM source
+    WHERE description IS NOT NULL and description != '' --les valeurs nulles créent des doublons sur stockcode et des erreurs en test
+),
+description_ranked AS (
+    SELECT 
+    stock_code,
+    description,
+    count(*) as nb_occurences,
+    row_number() OVER(
+        PARTITION BY stock_code
+        ORDER BY count(*) DESC
+    ) as rn 
+    FROM cleaned_source
+    GROUP BY stock_code, description
+),
+products AS (
+    SELECT
+    -------Id
+    s.stock_code,
+    d.description,
+    -------Metrics
+    min(price) AS min_price,
+    max(price) AS max_price,
+    avg(price) AS avg_price,
+    count(*) AS nb_transactions,
+    count(DISTINCT s.customer_id) AS nb_customers,
+    min(s.invoice_datetime) AS first_sale_date,
+    max(s.invoice_datetime) AS last_sale_date
+    FROM source s 
+    LEFT JOIN description_ranked d
+    ON s.stock_code = d.stock_code 
+    AND d.rn = 1 --garder la description la plus fréquente pour chaque stockcode
+    GROUP BY stock_code, description
+)
+SELECT * FROM products;
+
+
+[0m15:59:20.111688 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:59:20.861006 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:f5d9aab3-9fe6-4a8b-9794-c8857dfffc1d&page=queryresults
+[0m15:59:20.991883 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:3178aedc-7938-419e-883f-5f86929bc8c1&page=queryresults
+[0m15:59:21.104069 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:67a80b8d-4823-4af0-8cdb-1d25016c4c3e&page=queryresults
+[0m15:59:21.362505 [debug] [Thread-2 (]: SQL status: OK in 0.489 seconds
+[0m15:59:21.362505 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514A0D6C0>]}
+[0m15:59:21.378153 [info ] [Thread-2 (]: 4 of 11 OK created sql view model ecommerce_raw.fact_sales ..................... [[32mCREATE VIEW (0 processed)[0m in 1.37s]
+[0m15:59:21.378153 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.fact_sales
+[0m15:59:21.378153 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_country
+[0m15:59:21.378153 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_global
+[0m15:59:21.378153 [info ] [Thread-1 (]: 5 of 11 START sql view model ecommerce_raw.kpi_country ......................... [RUN]
+[0m15:59:21.378153 [info ] [Thread-2 (]: 6 of 11 START sql view model ecommerce_raw.kpi_global .......................... [RUN]
+[0m15:59:21.378153 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.stg_online_retail, now model.OnlineRetail_dbt_Transform.kpi_country)
+[0m15:59:21.384835 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.fact_sales, now model.OnlineRetail_dbt_Transform.kpi_global)
+[0m15:59:21.385848 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_country
+[0m15:59:21.386944 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_global
+[0m15:59:21.391595 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_country"
+[0m15:59:21.395605 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_global"
+[0m15:59:21.395605 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_global
+[0m15:59:21.395605 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_country
+[0m15:59:21.395605 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_global"
+[0m15:59:21.411711 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_country"
+[0m15:59:21.413745 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.kpi_global: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_global"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_global`
+  OPTIONS()
+  as -- calculer les KPIs globaux à partir de la table fact_sales
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+global_KPIs AS (
+    SELECT 
+    -- CA total
+    sum(line_amount) AS total_revenue,
+
+    -- 
+    count(distinct invoice_id) AS total_orders,
+    count(distinct customer_id) AS total_customers,
+    -- panier moyen global
+    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value
+    FROM source
+)
+SELECT * FROM global_KPIs;
+
+
+[0m15:59:21.413745 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.kpi_country: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_country"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_country`
+  OPTIONS()
+  as --Analyse métier
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+country_KPIs AS (
+    SELECT 
+    country, 
+    -- CA total
+    sum(line_amount) AS total_revenue,
+    count(distinct invoice_id) AS total_orders,
+    count(distinct customer_id) AS total_customers
+    FROM source
+    GROUP BY country
+)
+SELECT * FROM country_KPIs;
+
+
+[0m15:59:21.415047 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:59:21.416047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:21.492893 [debug] [Thread-4 (]: SQL status: OK in 0.486 seconds
+[0m15:59:21.498938 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265131BCE20>]}
+[0m15:59:21.499975 [info ] [Thread-4 (]: 3 of 11 OK created sql view model ecommerce_raw.dim_products ................... [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:59:21.501306 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.dim_products
+[0m15:59:21.502841 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.product_returns
+[0m15:59:21.503874 [info ] [Thread-4 (]: 7 of 11 START sql view model ecommerce_raw.product_returns ..................... [RUN]
+[0m15:59:21.503874 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.dim_products, now model.OnlineRetail_dbt_Transform.product_returns)
+[0m15:59:21.505255 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.product_returns
+[0m15:59:21.508247 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.product_returns"
+[0m15:59:21.512580 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.product_returns
+[0m15:59:21.515822 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.product_returns"
+[0m15:59:21.515822 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.product_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.product_returns"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`product_returns`
+  OPTIONS()
+  as -- Analyse des produits retournés : identifier les produits les plus retournés,le taux de retour
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+), 
+products AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+),
+products_return AS (
+    SELECT 
+        s.stock_code,
+        p.description,
+        s.country,
+        count(*) AS nb_transactions, --Fréquence de vente du produit
+        countif(s.is_return) AS nb_returns,
+        round(countif(s.is_return) / nullif(count(*), 0) * 100, 2) AS return_rate -- Another alternative : sum(CASE WHEN s.is_return THEN 1 ELSE 0 END) AS nb_returns,
+    FROM source s
+    LEFT JOIN products p ON s.stock_code = p.stock_code
+    GROUP BY s.stock_code, p.description, s.country
+    having countif(s.is_return) > 10 -- Eviter les produits avec très peu de transactions pour lesquels le taux de retour peut être biaisé
+)
+SELECT * FROM products_return
+ORDER BY return_rate DESC;
+
+
+[0m15:59:21.515822 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:59:21.634475 [debug] [Thread-3 (]: SQL status: OK in 0.529 seconds
+[0m15:59:21.640347 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514989F90>]}
+[0m15:59:21.640347 [info ] [Thread-3 (]: 2 of 11 OK created sql view model ecommerce_raw.dim_customers .................. [[32mCREATE VIEW (0 processed)[0m in 1.65s]
+[0m15:59:21.643441 [debug] [Thread-3 (]: Finished running node model.OnlineRetail_dbt_Transform.dim_customers
+[0m15:59:21.643441 [debug] [Thread-3 (]: Began running node model.OnlineRetail_dbt_Transform.top_products
+[0m15:59:21.645445 [info ] [Thread-3 (]: 8 of 11 START sql view model ecommerce_raw.top_products ........................ [RUN]
+[0m15:59:21.647449 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.dim_customers, now model.OnlineRetail_dbt_Transform.top_products)
+[0m15:59:21.647449 [debug] [Thread-3 (]: Began compiling node model.OnlineRetail_dbt_Transform.top_products
+[0m15:59:21.651455 [debug] [Thread-3 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.top_products"
+[0m15:59:21.651455 [debug] [Thread-3 (]: Began executing node model.OnlineRetail_dbt_Transform.top_products
+[0m15:59:21.662417 [debug] [Thread-3 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.top_products"
+[0m15:59:21.664492 [debug] [Thread-3 (]: On model.OnlineRetail_dbt_Transform.top_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.top_products"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`top_products`
+  OPTIONS()
+  as --Analyse des top produits en termes de revenus générés et de nombre de transactions.
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+products AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+),
+top_products AS (
+    SELECT 
+        s.stock_code,
+        p.description,
+        s.country,
+        sum(line_amount) AS total_revenue,
+        count(*) AS nb_transactions
+    FROM source s
+    LEFT JOIN products p ON s.stock_code = p.stock_code
+    GROUP BY s.stock_code, p.description, s.country
+)
+SELECT * FROM top_products
+ORDER BY total_revenue DESC
+LIMIT 10;
+
+
+[0m15:59:21.665592 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:59:22.346728 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:87e04568-8758-4ffe-a6ad-9e9cc7e8e8b2&page=queryresults
+[0m15:59:22.362479 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:0796153b-1c46-40e5-8c41-d0295f06c087&page=queryresults
+[0m15:59:22.412211 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:4140cf2a-b11c-4503-b0fc-2d06d58026e1&page=queryresults
+[0m15:59:22.479969 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:041872bb-24df-4d51-ac73-b23090a604d4&page=queryresults
+[0m15:59:22.752427 [debug] [Thread-2 (]: SQL status: OK in 0.390 seconds
+[0m15:59:22.768418 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514E9B730>]}
+[0m15:59:22.768418 [info ] [Thread-2 (]: 6 of 11 OK created sql view model ecommerce_raw.kpi_global ..................... [[32mCREATE VIEW (0 processed)[0m in 1.38s]
+[0m15:59:22.768418 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_global
+[0m15:59:22.784118 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m15:59:22.784118 [info ] [Thread-2 (]: 9 of 11 START sql view model ecommerce_raw.kpi_customers ....................... [RUN]
+[0m15:59:22.784118 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.kpi_global, now model.OnlineRetail_dbt_Transform.kpi_customers)
+[0m15:59:22.789589 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m15:59:22.798490 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_customers"
+[0m15:59:22.800496 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m15:59:22.806086 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_customers"
+[0m15:59:22.807108 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.kpi_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_customers`
+  OPTIONS()
+  as --Analyse métier
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+),
+customer_KPIs AS (
+    SELECT
+    customer_id,
+    total_revenue,
+    nb_orders,
+    avg_order_value,
+    recency_days, 
+    country
+    FROM source
+
+)
+SELECT * FROM customer_KPIs;
+
+
+[0m15:59:22.807108 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:59:22.857196 [debug] [Thread-4 (]: SQL status: OK in 0.448 seconds
+[0m15:59:22.863441 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265146BB7C0>]}
+[0m15:59:22.867967 [info ] [Thread-4 (]: 7 of 11 OK created sql view model ecommerce_raw.product_returns ................ [[32mCREATE VIEW (0 processed)[0m in 1.36s]
+[0m15:59:22.867967 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.product_returns
+[0m15:59:22.867967 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m15:59:22.867967 [info ] [Thread-4 (]: 10 of 11 START sql view model ecommerce_raw.rfm_segmentation ................... [RUN]
+[0m15:59:22.867967 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.product_returns, now model.OnlineRetail_dbt_Transform.rfm_segmentation)
+[0m15:59:22.867967 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m15:59:22.873120 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.rfm_segmentation"
+[0m15:59:22.873120 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m15:59:22.873120 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.rfm_segmentation"
+[0m15:59:22.873120 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.rfm_segmentation: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.rfm_segmentation"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`rfm_segmentation`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+),
+rfm_scores AS (
+    SELECT 
+    customer_id,
+    recency_days,
+    nb_orders,
+    country,
+    total_revenue,
+    -- Calcul des scores RFM
+    -- Recency score: plus c'est récent, mieux c'est
+    ntile(5) over (order by recency_days asc) as r_score,
+
+        -- Frequency score
+    ntile(5) over (order by nb_orders desc) as f_score,
+
+        -- Monetary score
+    ntile(5) over (order by total_revenue desc) as m_score
+    FROM source
+), 
+rfm_segments AS (
+    SELECT *,
+    CASE 
+        WHEN r_score >= 4 AND f_score >= 4 AND m_score >= 4 THEN 'VIP'
+        WHEN r_score >= 3 AND f_score >= 3 THEN 'Loyal'
+        WHEN r_score <= 2 AND f_score >= 3 THEN 'At Risk'
+        WHEN r_score <= 2 THEN 'Low Value'
+        ELSE 'Regular' 
+        END AS customer_segment
+    FROM rfm_scores
+)
+SELECT * FROM rfm_segments;
+
+
+[0m15:59:22.873120 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:59:22.964085 [debug] [Thread-1 (]: SQL status: OK in 0.479 seconds
+[0m15:59:22.968394 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514989F90>]}
+[0m15:59:22.970423 [info ] [Thread-1 (]: 5 of 11 OK created sql view model ecommerce_raw.kpi_country .................... [[32mCREATE VIEW (0 processed)[0m in 1.59s]
+[0m15:59:22.971011 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_country
+[0m15:59:23.056528 [debug] [Thread-3 (]: SQL status: OK in 0.711 seconds
+[0m15:59:23.056528 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514D040D0>]}
+[0m15:59:23.056528 [info ] [Thread-3 (]: 8 of 11 OK created sql view model ecommerce_raw.top_products ................... [[32mCREATE VIEW (0 processed)[0m in 1.41s]
+[0m15:59:23.056528 [debug] [Thread-3 (]: Finished running node model.OnlineRetail_dbt_Transform.top_products
+[0m15:59:23.574318 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:69205de7-74fd-4304-bb7f-de4a3f6731ed&page=queryresults
+[0m15:59:23.579589 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:148505c5-0715-40f8-8dcb-23eca219310c&page=queryresults
+[0m15:59:24.045018 [debug] [Thread-4 (]: SQL status: OK in 0.467 seconds
+[0m15:59:24.045018 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265149889A0>]}
+[0m15:59:24.054502 [info ] [Thread-4 (]: 10 of 11 OK created sql view model ecommerce_raw.rfm_segmentation .............. [[32mCREATE VIEW (0 processed)[0m in 1.18s]
+[0m15:59:24.054502 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m15:59:24.054502 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m15:59:24.054502 [info ] [Thread-1 (]: 11 of 11 START sql view model ecommerce_raw.at_risk_customers .................. [RUN]
+[0m15:59:24.054502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.kpi_country, now model.OnlineRetail_dbt_Transform.at_risk_customers)
+[0m15:59:24.063218 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m15:59:24.072542 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.at_risk_customers"
+[0m15:59:24.072966 [debug] [Thread-2 (]: SQL status: OK in 0.488 seconds
+[0m15:59:24.080339 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657DEEB8E0>]}
+[0m15:59:24.080339 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m15:59:24.080339 [info ] [Thread-2 (]: 9 of 11 OK created sql view model ecommerce_raw.kpi_customers .................. [[32mCREATE VIEW (0 processed)[0m in 1.30s]
+[0m15:59:24.087164 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.at_risk_customers"
+[0m15:59:24.088179 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m15:59:24.090590 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.at_risk_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.at_risk_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`at_risk_customers`
+  OPTIONS()
+  as --Analysis to identify at-risk customers based on their purchasing behavior. 
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`rfm_segmentation`
+),
+at_risk_customers AS (
+    SELECT 
+        customer_id, 
+        total_revenue,
+        nb_orders,
+        recency_days,
+        customer_segment,
+        country
+    FROM source
+    WHERE customer_segment = 'At Risk'
+    AND nb_orders >= 3 -- Pour ne orendre en compte que les clients réguliers
+)
+SELECT * FROM at_risk_customers
+ORDER BY total_revenue DESC;
+
+
+[0m15:59:24.091591 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:24.834094 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:043215a1-c86c-4950-b5b4-be05f94de2e7&page=queryresults
+[0m15:59:25.347217 [debug] [Thread-1 (]: SQL status: OK in 0.497 seconds
+[0m15:59:25.351781 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '51f816a4-fe6e-4e81-bce5-9e89a9c3e27c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514A1DDE0>]}
+[0m15:59:25.351781 [info ] [Thread-1 (]: 11 of 11 OK created sql view model ecommerce_raw.at_risk_customers ............. [[32mCREATE VIEW (0 processed)[0m in 1.30s]
+[0m15:59:25.351781 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m15:59:25.351781 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:59:25.399288 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:59:25.400292 [debug] [MainThread]: Connection 'list_onlineretail-491719' was properly closed.
+[0m15:59:25.401296 [debug] [MainThread]: Connection 'list_onlineretail-491719_ecommerce_raw' was properly closed.
+[0m15:59:25.401664 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.at_risk_customers' was properly closed.
+[0m15:59:25.401664 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.top_products' was properly closed.
+[0m15:59:25.402704 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.rfm_segmentation' was properly closed.
+[0m15:59:25.402704 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.kpi_customers' was properly closed.
+[0m15:59:25.403709 [info ] [MainThread]: 
+[0m15:59:25.404388 [info ] [MainThread]: Finished running 11 view models in 0 hours 0 minutes and 11.24 seconds (11.24s).
+[0m15:59:25.407279 [debug] [MainThread]: Command end result
+[0m15:59:25.454953 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m15:59:25.457945 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m15:59:25.468281 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\run_results.json
+[0m15:59:25.468281 [info ] [MainThread]: 
+[0m15:59:25.469346 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:59:25.470573 [info ] [MainThread]: 
+[0m15:59:25.471580 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m15:59:25.471580 [debug] [MainThread]: Command `dbt run` succeeded at 15:59:25.471580 after 22.01 seconds
+[0m15:59:25.473096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657FB84DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657DE3AC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026514976890>]}
+[0m15:59:25.473096 [debug] [MainThread]: Flushing usage events
+[0m15:59:25.985510 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:59:30.515251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E1068D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E232FCA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E232FE80>]}
+
+
+============================== 15:59:30.520053 | 0786d6d5-0a21-4742-9dea-a40e9d1181ab ==============================
+[0m15:59:30.520053 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:59:30.521359 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\seynabou\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\seynabou\\Documents\\OnlineRetail\\OnlineRetail_dbt_Transform\\logs'}
+[0m15:59:31.967790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E232FEE0>]}
+[0m15:59:32.040605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E22B5EA0>]}
+[0m15:59:32.040605 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:59:32.567376 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:59:32.885380 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:59:32.887112 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:59:32.887112 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:59:32.955208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4B74EE0>]}
+[0m15:59:33.113159 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m15:59:33.113159 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m15:59:33.171233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4AAADD0>]}
+[0m15:59:33.171233 [info ] [MainThread]: Found 13 models, 7 data tests, 2 sources, 654 macros
+[0m15:59:33.171233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4AA9C90>]}
+[0m15:59:33.171233 [info ] [MainThread]: 
+[0m15:59:33.171233 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:59:33.171233 [info ] [MainThread]: 
+[0m15:59:33.171233 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:59:33.185281 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719_ecommerce_raw'
+[0m15:59:33.185281 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:33.613799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0786d6d5-0a21-4742-9dea-a40e9d1181ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F33826E0>]}
+[0m15:59:33.613799 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:59:33.641890 [debug] [Thread-1 (]: Began running node test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:59:33.657656 [debug] [Thread-3 (]: Began running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e
+[0m15:59:33.641890 [debug] [Thread-2 (]: Began running node test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c
+[0m15:59:33.657656 [debug] [Thread-4 (]: Began running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2
+[0m15:59:33.657656 [info ] [Thread-1 (]: 1 of 7 START test not_null_dim_customers_customer_id ........................... [RUN]
+[0m15:59:33.657656 [info ] [Thread-3 (]: 3 of 7 START test not_null_stg_online_retail_invoice_id ........................ [RUN]
+[0m15:59:33.657656 [info ] [Thread-2 (]: 2 of 7 START test not_null_dim_products_stock_code ............................. [RUN]
+[0m15:59:33.657656 [info ] [Thread-4 (]: 4 of 7 START test not_null_stg_online_retail_price ............................. [RUN]
+[0m15:59:33.657656 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d'
+[0m15:59:33.657656 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e'
+[0m15:59:33.657656 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c'
+[0m15:59:33.657656 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2'
+[0m15:59:33.657656 [debug] [Thread-1 (]: Began compiling node test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:59:33.657656 [debug] [Thread-3 (]: Began compiling node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e
+[0m15:59:33.657656 [debug] [Thread-2 (]: Began compiling node test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c
+[0m15:59:33.657656 [debug] [Thread-4 (]: Began compiling node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2
+[0m15:59:33.690648 [debug] [Thread-1 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:59:33.698023 [debug] [Thread-3 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e"
+[0m15:59:33.704813 [debug] [Thread-2 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c"
+[0m15:59:33.704813 [debug] [Thread-4 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2"
+[0m15:59:33.704813 [debug] [Thread-1 (]: Began executing node test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:59:33.704813 [debug] [Thread-2 (]: Began executing node test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c
+[0m15:59:33.704813 [debug] [Thread-3 (]: Began executing node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e
+[0m15:59:33.735418 [debug] [Thread-4 (]: Began executing node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2
+[0m15:59:33.744221 [debug] [Thread-1 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:59:33.817634 [debug] [Thread-2 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c"
+[0m15:59:33.833479 [debug] [Thread-3 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e"
+[0m15:59:33.835999 [debug] [Thread-4 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2"
+[0m15:59:33.835999 [debug] [Thread-3 (]: On test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select invoice_id
+from `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+where invoice_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:33.835999 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:59:33.835999 [debug] [Thread-2 (]: On test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select stock_code
+from `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+where stock_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:33.835999 [debug] [Thread-4 (]: On test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:33.835999 [debug] [Thread-1 (]: On test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:33.886440 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:59:33.888442 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:59:33.890445 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:59:34.875684 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:b1677204-1036-4113-a03d-b28e9d79ec14&page=queryresults
+[0m15:59:34.891633 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:32c0a46d-29de-48b8-805c-5e621d088da6&page=queryresults
+[0m15:59:34.919094 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:226a9e47-9c81-451a-86a7-2cce75fecd72&page=queryresults
+[0m15:59:35.148265 [debug] [Thread-2 (]: SQL status: OK in 0.252 seconds
+[0m15:59:35.148265 [debug] [Thread-3 (]: SQL status: OK in 0.236 seconds
+[0m15:59:35.164037 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:f6bd681d-d8c1-4443-b019-ca099b193c58&page=queryresults
+[0m15:59:35.247483 [debug] [Thread-4 (]: SQL status: OK in 0.370 seconds
+[0m15:59:35.423920 [debug] [Thread-1 (]: SQL status: OK in 0.256 seconds
+[0m15:59:35.719005 [info ] [Thread-2 (]: 2 of 7 PASS not_null_dim_products_stock_code ................................... [[32mPASS[0m in 2.06s]
+[0m15:59:35.719005 [debug] [Thread-2 (]: Finished running node test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c
+[0m15:59:35.734788 [debug] [Thread-2 (]: Began running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19
+[0m15:59:35.734788 [info ] [Thread-2 (]: 5 of 7 START test not_null_stg_online_retail_quantity .......................... [RUN]
+[0m15:59:35.734788 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.OnlineRetail_dbt_Transform.not_null_dim_products_stock_code.be4e9f421c, now test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19)
+[0m15:59:35.734788 [debug] [Thread-2 (]: Began compiling node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19
+[0m15:59:35.734788 [debug] [Thread-2 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19"
+[0m15:59:35.734788 [debug] [Thread-2 (]: Began executing node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19
+[0m15:59:35.756841 [debug] [Thread-2 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19"
+[0m15:59:35.753941 [info ] [Thread-3 (]: 3 of 7 PASS not_null_stg_online_retail_invoice_id .............................. [[32mPASS[0m in 2.10s]
+[0m15:59:35.756841 [debug] [Thread-3 (]: Finished running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e
+[0m15:59:35.756841 [debug] [Thread-3 (]: Began running node test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:59:35.756841 [debug] [Thread-2 (]: On test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:35.756841 [info ] [Thread-3 (]: 6 of 7 START test unique_dim_customers_customer_id ............................. [RUN]
+[0m15:59:35.756841 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:59:35.765367 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_invoice_id.f95eb63b8e, now test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m15:59:35.808015 [debug] [Thread-3 (]: Began compiling node test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:59:35.809074 [info ] [Thread-4 (]: 4 of 7 PASS not_null_stg_online_retail_price ................................... [[32mPASS[0m in 2.15s]
+[0m15:59:35.822313 [debug] [Thread-3 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:59:35.822313 [debug] [Thread-4 (]: Finished running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2
+[0m15:59:35.822313 [debug] [Thread-4 (]: Began running node test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa
+[0m15:59:35.822313 [info ] [Thread-4 (]: 7 of 7 START test unique_dim_products_stock_code ............................... [RUN]
+[0m15:59:35.822313 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_price.471f3080d2, now test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa)
+[0m15:59:35.822313 [debug] [Thread-3 (]: Began executing node test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:59:35.822313 [debug] [Thread-4 (]: Began compiling node test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa
+[0m15:59:35.835597 [debug] [Thread-3 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:59:35.840923 [debug] [Thread-4 (]: Writing injected SQL for node "test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa"
+[0m15:59:35.840923 [debug] [Thread-3 (]: On test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:35.840923 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:59:35.849744 [debug] [Thread-4 (]: Began executing node test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa
+[0m15:59:35.895467 [debug] [Thread-4 (]: Writing runtime sql for node "test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa"
+[0m15:59:35.897637 [debug] [Thread-4 (]: On test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select stock_code as unique_field
+  from `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+  where stock_code is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:59:35.898658 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:59:35.938047 [info ] [Thread-1 (]: 1 of 7 PASS not_null_dim_customers_customer_id ................................. [[32mPASS[0m in 2.28s]
+[0m15:59:35.938047 [debug] [Thread-1 (]: Finished running node test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:59:36.652577 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:193eb9b8-1b7c-4903-afaf-5bbd7d206eaf&page=queryresults
+[0m15:59:36.668612 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:36a1d647-4360-4ba5-8fbb-5dc46f9c808f&page=queryresults
+[0m15:59:36.764510 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:a46c85dc-58be-46ab-a682-6cbb2570a364&page=queryresults
+[0m15:59:36.897137 [debug] [Thread-2 (]: SQL status: OK in 0.227 seconds
+[0m15:59:36.908326 [debug] [Thread-3 (]: SQL status: OK in 0.251 seconds
+[0m15:59:36.994077 [debug] [Thread-4 (]: SQL status: OK in 0.242 seconds
+[0m15:59:37.399100 [info ] [Thread-3 (]: 6 of 7 PASS unique_dim_customers_customer_id ................................... [[32mPASS[0m in 1.63s]
+[0m15:59:37.399817 [debug] [Thread-3 (]: Finished running node test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:59:37.432533 [info ] [Thread-2 (]: 5 of 7 PASS not_null_stg_online_retail_quantity ................................ [[32mPASS[0m in 1.70s]
+[0m15:59:37.432533 [debug] [Thread-2 (]: Finished running node test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19
+[0m15:59:37.492025 [info ] [Thread-4 (]: 7 of 7 PASS unique_dim_products_stock_code ..................................... [[32mPASS[0m in 1.67s]
+[0m15:59:37.494134 [debug] [Thread-4 (]: Finished running node test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa
+[0m15:59:37.495442 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:59:37.534996 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:59:37.534996 [debug] [MainThread]: Connection 'list_onlineretail-491719_ecommerce_raw' was properly closed.
+[0m15:59:37.534996 [debug] [MainThread]: Connection 'test.OnlineRetail_dbt_Transform.not_null_dim_customers_customer_id.dd91cd1c8d' was properly closed.
+[0m15:59:37.534996 [debug] [MainThread]: Connection 'test.OnlineRetail_dbt_Transform.unique_dim_customers_customer_id.15c9f1e2fd' was properly closed.
+[0m15:59:37.536999 [debug] [MainThread]: Connection 'test.OnlineRetail_dbt_Transform.not_null_stg_online_retail_quantity.c5f1dc3a19' was properly closed.
+[0m15:59:37.536999 [debug] [MainThread]: Connection 'test.OnlineRetail_dbt_Transform.unique_dim_products_stock_code.249bcf00aa' was properly closed.
+[0m15:59:37.536999 [info ] [MainThread]: 
+[0m15:59:37.539003 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 4.37 seconds (4.37s).
+[0m15:59:37.541006 [debug] [MainThread]: Command end result
+[0m15:59:37.589591 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m15:59:37.593340 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m15:59:37.603058 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\run_results.json
+[0m15:59:37.604209 [info ] [MainThread]: 
+[0m15:59:37.605391 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:59:37.606396 [info ] [MainThread]: 
+[0m15:59:37.606396 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m15:59:37.608432 [debug] [MainThread]: Command `dbt test` succeeded at 15:59:37.608432 after 7.20 seconds
+[0m15:59:37.608432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248E1068D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4AE9C60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4AAAC80>]}
+[0m15:59:37.609449 [debug] [MainThread]: Flushing usage events
+[0m15:59:38.037761 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:14:06.943826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024285254D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024286523BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024286523FA0>]}
+
+
+============================== 16:14:06.955947 | fac72a1c-5091-46cd-8769-965edef9f302 ==============================
+[0m16:14:06.955947 [info ] [MainThread]: Running with dbt=1.11.7
+[0m16:14:06.955947 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\seynabou\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\seynabou\\Documents\\OnlineRetail\\OnlineRetail_dbt_Transform\\logs'}
+[0m16:14:09.756256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024286523F70>]}
+[0m16:14:09.851278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024285C701F0>]}
+[0m16:14:09.851278 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m16:14:10.565745 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m16:14:10.883235 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:14:10.883235 [debug] [MainThread]: Partial parsing: updated file: OnlineRetail_dbt_Transform://models\marts\kpi\kpi_global.sql
+[0m16:14:11.273736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298FA0130>]}
+[0m16:14:11.431393 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m16:14:11.431393 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m16:14:11.582748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298D313C0>]}
+[0m16:14:11.582748 [info ] [MainThread]: Found 13 models, 7 data tests, 2 sources, 654 macros
+[0m16:14:11.582748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298D31900>]}
+[0m16:14:11.582748 [info ] [MainThread]: 
+[0m16:14:11.582748 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:14:11.582748 [info ] [MainThread]: 
+[0m16:14:11.599644 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:14:11.607713 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719'
+[0m16:14:11.608756 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:14:12.181461 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_onlineretail-491719_ecommerce_raw'
+[0m16:14:12.181461 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:14:12.632719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242825EBEB0>]}
+[0m16:14:12.632719 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:14:12.680380 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m16:14:12.680380 [info ] [Thread-1 (]: 1 of 11 START sql view model ecommerce_raw.stg_online_retail ................... [RUN]
+[0m16:14:12.680380 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.stg_online_retail'
+[0m16:14:12.680380 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m16:14:12.680380 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.stg_online_retail"
+[0m16:14:12.698665 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m16:14:12.737294 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.stg_online_retail"
+[0m16:14:12.741477 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.stg_online_retail: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.stg_online_retail"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+  OPTIONS()
+  as -- Staging model for online retail data
+
+-- Uniting the 2 source files
+WITH combined_sources AS(
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`online_retail_2009_2010`
+    UNION ALL
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`online_retail_2010_2011`
+),
+-- cleaning, renaming and formating the data   
+cleaned_data AS(
+    SELECT 
+    --Ids
+    CAST(Invoice AS string) AS invoice_id,
+    CAST(StockCode AS string) AS stock_code,
+    CAST(CustomerID AS string) AS customer_id,
+
+    --Text
+    TRIM(Description) AS description,
+    TRIM(Country) AS country,
+
+    --Numeric
+    SAFE_CAST(Quantity AS int64) AS quantity,
+    SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) AS price,   
+    
+    --Date
+    SAFE.PARSE_TIMESTAMP('%m/%d/%y %H:%M', InvoiceDate) AS invoice_datetime,
+
+    --Flags métier
+    CASE 
+    WHEN SAFE_CAST(Quantity AS int64) < 0 THEN TRUE
+    ELSE FALSE
+    END AS is_return,
+
+    CASE 
+    WHEN CAST(Invoice AS string) LIKE 'C%' THEN TRUE
+    ELSE FALSE
+    END AS is_cancelled,
+
+    CASE 
+    WHEN CustomerID IS NULL OR CustomerID = '' THEN TRUE
+    ELSE FALSE
+    END AS is_anonymous_customer,
+
+    CASE 
+    WHEN SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) = 0 THEN TRUE
+    ELSE FALSE
+    END AS is_free_item,
+
+    -- Metrics
+    SAFE_CAST(Quantity AS int64) * SAFE_CAST(replace(nullif(Price, ''), ',', '.') AS float64) AS line_amount
+
+FROM combined_sources
+
+)
+SELECT * FROM cleaned_data;
+
+
+[0m16:14:12.743475 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:14:14.086347 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:75081e0f-c538-4135-a801-99341e0176fb&page=queryresults
+[0m16:14:14.697808 [debug] [Thread-1 (]: SQL status: OK in 0.608 seconds
+[0m16:14:14.840073 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002429752AE90>]}
+[0m16:14:14.840073 [info ] [Thread-1 (]: 1 of 11 OK created sql view model ecommerce_raw.stg_online_retail .............. [[32mCREATE VIEW (0 processed)[0m in 2.16s]
+[0m16:14:14.840073 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.stg_online_retail
+[0m16:14:14.840073 [debug] [Thread-3 (]: Began running node model.OnlineRetail_dbt_Transform.dim_customers
+[0m16:14:14.840073 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.dim_products
+[0m16:14:14.840073 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.fact_sales
+[0m16:14:14.840073 [info ] [Thread-3 (]: 2 of 11 START sql view model ecommerce_raw.dim_customers ....................... [RUN]
+[0m16:14:14.840073 [info ] [Thread-4 (]: 3 of 11 START sql view model ecommerce_raw.dim_products ........................ [RUN]
+[0m16:14:14.855013 [info ] [Thread-2 (]: 4 of 11 START sql view model ecommerce_raw.fact_sales .......................... [RUN]
+[0m16:14:14.856404 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.dim_customers'
+[0m16:14:14.857594 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.dim_products'
+[0m16:14:14.858900 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.OnlineRetail_dbt_Transform.fact_sales'
+[0m16:14:14.860202 [debug] [Thread-3 (]: Began compiling node model.OnlineRetail_dbt_Transform.dim_customers
+[0m16:14:14.860709 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.dim_products
+[0m16:14:14.860709 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.fact_sales
+[0m16:14:14.869050 [debug] [Thread-3 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.dim_customers"
+[0m16:14:14.871628 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.dim_products"
+[0m16:14:14.871628 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.fact_sales"
+[0m16:14:14.882579 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.dim_products
+[0m16:14:14.886079 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.dim_products"
+[0m16:14:14.886079 [debug] [Thread-3 (]: Began executing node model.OnlineRetail_dbt_Transform.dim_customers
+[0m16:14:14.886079 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.fact_sales
+[0m16:14:14.886079 [debug] [Thread-3 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.dim_customers"
+[0m16:14:14.886079 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.dim_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.dim_products"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+),
+cleaned_source AS (-- car stockcode + description n'est pas une combinaison unique
+    SELECT 
+    stock_code,
+    description,
+    price,
+    customer_id,
+    invoice_datetime
+    FROM source
+    WHERE description IS NOT NULL and description != '' --les valeurs nulles créent des doublons sur stockcode et des erreurs en test
+),
+description_ranked AS (
+    SELECT 
+    stock_code,
+    description,
+    count(*) as nb_occurences,
+    row_number() OVER(
+        PARTITION BY stock_code
+        ORDER BY count(*) DESC
+    ) as rn 
+    FROM cleaned_source
+    GROUP BY stock_code, description
+),
+products AS (
+    SELECT
+    -------Id
+    s.stock_code,
+    d.description,
+    -------Metrics
+    min(price) AS min_price,
+    max(price) AS max_price,
+    avg(price) AS avg_price,
+    count(*) AS nb_transactions,
+    count(DISTINCT s.customer_id) AS nb_customers,
+    min(s.invoice_datetime) AS first_sale_date,
+    max(s.invoice_datetime) AS last_sale_date
+    FROM source s 
+    LEFT JOIN description_ranked d
+    ON s.stock_code = d.stock_code 
+    AND d.rn = 1 --garder la description la plus fréquente pour chaque stockcode
+    GROUP BY stock_code, description
+)
+SELECT * FROM products;
+
+
+[0m16:14:14.898617 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.fact_sales"
+[0m16:14:14.898617 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:14:14.898617 [debug] [Thread-3 (]: On model.OnlineRetail_dbt_Transform.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.dim_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+  OPTIONS()
+  as WITH source AS(
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+    WHERE customer_id IS NOT NULL AND customer_id != '' --filtrer les clients anonymes
+),
+customers AS (
+    SELECT 
+    customer_id,
+    any_value(country) AS country,
+
+    --activité
+    count(distinct invoice_id) AS nb_orders,
+    sum(quantity) AS total_quantity,
+
+    --valeur
+    sum(line_amount) AS total_revenue,
+    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value,-- éviter division par 0
+
+    --temporalité
+    min(invoice_datetime) AS first_purchase_date,
+    max(invoice_datetime) AS last_purchase_date,
+    date_diff(current_date(), DATE(max(invoice_datetime)), day) AS recency_days
+    FROM source
+    GROUP BY customer_id
+)
+SELECT * FROM customers;
+
+
+[0m16:14:14.940612 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:14:14.943745 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.fact_sales: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.fact_sales"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`stg_online_retail`
+)
+SELECT
+    --surrogate key aka primary key   
+    
+    ABS(FARM_FINGERPRINT(
+    CONCAT(
+        COALESCE(CAST(invoice_id AS STRING), ''),
+        COALESCE(stock_code, ''),
+        COALESCE(CAST(invoice_datetime AS STRING), '')
+    )
+)) AS transaction_id,
+
+    --business keys
+    invoice_id,
+    stock_code,
+    customer_id,
+
+    --dimensions
+    date(invoice_datetime) AS invoice_date,
+    country,
+
+    --metrics
+    quantity,
+    price,
+    line_amount,
+
+    --flags métier
+    is_return,
+    is_cancelled,    
+    is_free_item
+
+FROM source;
+
+
+[0m16:14:14.945871 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:14:15.657495 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:748a8c71-8cf1-4f98-8432-b38a07bfe987&page=queryresults
+[0m16:14:15.737688 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:b92c8453-d489-427d-81a3-167f1571ed28&page=queryresults
+[0m16:14:15.737688 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:2de9e870-4709-4f24-9d43-0593ac4376a6&page=queryresults
+[0m16:14:16.097825 [debug] [Thread-4 (]: SQL status: OK in 0.451 seconds
+[0m16:14:16.111389 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298E08D60>]}
+[0m16:14:16.111389 [info ] [Thread-4 (]: 3 of 11 OK created sql view model ecommerce_raw.dim_products ................... [[32mCREATE VIEW (0 processed)[0m in 1.25s]
+[0m16:14:16.111389 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.dim_products
+[0m16:14:16.220062 [debug] [Thread-2 (]: SQL status: OK in 0.465 seconds
+[0m16:14:16.237009 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298E08D60>]}
+[0m16:14:16.237009 [debug] [Thread-3 (]: SQL status: OK in 0.486 seconds
+[0m16:14:16.237009 [info ] [Thread-2 (]: 4 of 11 OK created sql view model ecommerce_raw.fact_sales ..................... [[32mCREATE VIEW (0 processed)[0m in 1.38s]
+[0m16:14:16.249871 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242992E3D30>]}
+[0m16:14:16.249871 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.fact_sales
+[0m16:14:16.249871 [info ] [Thread-3 (]: 2 of 11 OK created sql view model ecommerce_raw.dim_customers .................. [[32mCREATE VIEW (0 processed)[0m in 1.39s]
+[0m16:14:16.254111 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_country
+[0m16:14:16.254111 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_global
+[0m16:14:16.255124 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.product_returns
+[0m16:14:16.256418 [debug] [Thread-3 (]: Finished running node model.OnlineRetail_dbt_Transform.dim_customers
+[0m16:14:16.257421 [info ] [Thread-1 (]: 5 of 11 START sql view model ecommerce_raw.kpi_country ......................... [RUN]
+[0m16:14:16.259314 [info ] [Thread-4 (]: 6 of 11 START sql view model ecommerce_raw.kpi_global .......................... [RUN]
+[0m16:14:16.262382 [info ] [Thread-2 (]: 7 of 11 START sql view model ecommerce_raw.product_returns ..................... [RUN]
+[0m16:14:16.263889 [debug] [Thread-3 (]: Began running node model.OnlineRetail_dbt_Transform.top_products
+[0m16:14:16.266561 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.stg_online_retail, now model.OnlineRetail_dbt_Transform.kpi_country)
+[0m16:14:16.267838 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.dim_products, now model.OnlineRetail_dbt_Transform.kpi_global)
+[0m16:14:16.268896 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.fact_sales, now model.OnlineRetail_dbt_Transform.product_returns)
+[0m16:14:16.269973 [info ] [Thread-3 (]: 8 of 11 START sql view model ecommerce_raw.top_products ........................ [RUN]
+[0m16:14:16.271074 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_country
+[0m16:14:16.271074 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_global
+[0m16:14:16.271074 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.product_returns
+[0m16:14:16.271074 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.dim_customers, now model.OnlineRetail_dbt_Transform.top_products)
+[0m16:14:16.279850 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_country"
+[0m16:14:16.287285 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_global"
+[0m16:14:16.288754 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.product_returns"
+[0m16:14:16.288754 [debug] [Thread-3 (]: Began compiling node model.OnlineRetail_dbt_Transform.top_products
+[0m16:14:16.299738 [debug] [Thread-3 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.top_products"
+[0m16:14:16.299738 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_country
+[0m16:14:16.299738 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_global
+[0m16:14:16.299738 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.product_returns
+[0m16:14:16.312417 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_country"
+[0m16:14:16.312417 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_global"
+[0m16:14:16.312417 [debug] [Thread-3 (]: Began executing node model.OnlineRetail_dbt_Transform.top_products
+[0m16:14:16.325083 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.product_returns"
+[0m16:14:16.332059 [debug] [Thread-3 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.top_products"
+[0m16:14:16.333109 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.kpi_country: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_country"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_country`
+  OPTIONS()
+  as --Analyse métier
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+country_KPIs AS (
+    SELECT 
+    country, 
+    -- CA total
+    sum(line_amount) AS total_revenue,
+    count(distinct invoice_id) AS total_orders,
+    count(distinct customer_id) AS total_customers
+    FROM source
+    GROUP BY country
+)
+SELECT * FROM country_KPIs;
+
+
+[0m16:14:16.334137 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.kpi_global: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_global"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_global`
+  OPTIONS()
+  as -- calculer les KPIs globaux à partir de la table fact_sales
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+global_KPIs AS (
+    SELECT 
+    -- CA total
+    sum(line_amount) AS total_revenue,
+
+    -- 
+    count(distinct invoice_id) AS total_orders,
+    count(distinct customer_id) AS total_customers,
+    -- panier moyen global
+    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value,
+    -- country
+    country
+    FROM source
+    GROUP BY country
+)
+SELECT * FROM global_KPIs;
+
+
+[0m16:14:16.336166 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:14:16.337297 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.product_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.product_returns"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`product_returns`
+  OPTIONS()
+  as -- Analyse des produits retournés : identifier les produits les plus retournés,le taux de retour
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+), 
+products AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+),
+products_return AS (
+    SELECT 
+        s.stock_code,
+        p.description,
+        s.country,
+        count(*) AS nb_transactions, --Fréquence de vente du produit
+        countif(s.is_return) AS nb_returns,
+        round(countif(s.is_return) / nullif(count(*), 0) * 100, 2) AS return_rate -- Another alternative : sum(CASE WHEN s.is_return THEN 1 ELSE 0 END) AS nb_returns,
+    FROM source s
+    LEFT JOIN products p ON s.stock_code = p.stock_code
+    GROUP BY s.stock_code, p.description, s.country
+    having countif(s.is_return) > 10 -- Eviter les produits avec très peu de transactions pour lesquels le taux de retour peut être biaisé
+)
+SELECT * FROM products_return
+ORDER BY return_rate DESC;
+
+
+[0m16:14:16.338315 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m16:14:16.339314 [debug] [Thread-3 (]: On model.OnlineRetail_dbt_Transform.top_products: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.top_products"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`top_products`
+  OPTIONS()
+  as --Analyse des top produits en termes de revenus générés et de nombre de transactions.
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`fact_sales`
+),
+products AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_products`
+),
+top_products AS (
+    SELECT 
+        s.stock_code,
+        p.description,
+        s.country,
+        sum(line_amount) AS total_revenue,
+        count(*) AS nb_transactions
+    FROM source s
+    LEFT JOIN products p ON s.stock_code = p.stock_code
+    GROUP BY s.stock_code, p.description, s.country
+)
+SELECT * FROM top_products
+ORDER BY total_revenue DESC
+LIMIT 10;
+
+
+[0m16:14:16.377339 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:14:16.409653 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m16:14:17.178218 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:6af65781-ed72-405e-8d30-b094c49dedf3&page=queryresults
+[0m16:14:17.253177 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:0a4b6e9b-b9e4-46ea-9734-16095b4987bb&page=queryresults
+[0m16:14:17.273635 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:e81d00b4-4365-449a-9870-ea98ebb85dbd&page=queryresults
+[0m16:14:17.321457 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:0438173d-f4dc-4b3b-8be5-3c3d7016f4d0&page=queryresults
+[0m16:14:17.693938 [debug] [Thread-2 (]: SQL status: OK in 0.449 seconds
+[0m16:14:17.711916 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298F9CC40>]}
+[0m16:14:17.711916 [info ] [Thread-2 (]: 7 of 11 OK created sql view model ecommerce_raw.product_returns ................ [[32mCREATE VIEW (0 processed)[0m in 1.44s]
+[0m16:14:17.711916 [debug] [Thread-1 (]: SQL status: OK in 0.527 seconds
+[0m16:14:17.711916 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.product_returns
+[0m16:14:17.711916 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298F9D7E0>]}
+[0m16:14:17.711916 [debug] [Thread-2 (]: Began running node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m16:14:17.711916 [info ] [Thread-1 (]: 5 of 11 OK created sql view model ecommerce_raw.kpi_country .................... [[32mCREATE VIEW (0 processed)[0m in 1.45s]
+[0m16:14:17.723618 [info ] [Thread-2 (]: 9 of 11 START sql view model ecommerce_raw.kpi_customers ....................... [RUN]
+[0m16:14:17.725725 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_country
+[0m16:14:17.727736 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.product_returns, now model.OnlineRetail_dbt_Transform.kpi_customers)
+[0m16:14:17.727736 [debug] [Thread-1 (]: Began running node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m16:14:17.730174 [debug] [Thread-2 (]: Began compiling node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m16:14:17.730174 [info ] [Thread-1 (]: 10 of 11 START sql view model ecommerce_raw.rfm_segmentation ................... [RUN]
+[0m16:14:17.737563 [debug] [Thread-2 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.kpi_customers"
+[0m16:14:17.738704 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.kpi_country, now model.OnlineRetail_dbt_Transform.rfm_segmentation)
+[0m16:14:17.739718 [debug] [Thread-1 (]: Began compiling node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m16:14:17.742212 [debug] [Thread-1 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.rfm_segmentation"
+[0m16:14:17.742212 [debug] [Thread-2 (]: Began executing node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m16:14:17.750107 [debug] [Thread-2 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.kpi_customers"
+[0m16:14:17.750107 [debug] [Thread-1 (]: Began executing node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m16:14:17.750107 [debug] [Thread-2 (]: On model.OnlineRetail_dbt_Transform.kpi_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.kpi_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`kpi_customers`
+  OPTIONS()
+  as --Analyse métier
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+),
+customer_KPIs AS (
+    SELECT
+    customer_id,
+    total_revenue,
+    nb_orders,
+    avg_order_value,
+    recency_days, 
+    country
+    FROM source
+
+)
+SELECT * FROM customer_KPIs;
+
+
+[0m16:14:17.758500 [debug] [Thread-4 (]: SQL status: OK in 0.475 seconds
+[0m16:14:17.758886 [debug] [Thread-1 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.rfm_segmentation"
+[0m16:14:17.758886 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:14:17.766079 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242994283A0>]}
+[0m16:14:17.803404 [info ] [Thread-4 (]: 6 of 11 OK created sql view model ecommerce_raw.kpi_global ..................... [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m16:14:17.804405 [debug] [Thread-3 (]: SQL status: OK in 0.482 seconds
+[0m16:14:17.808595 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_global
+[0m16:14:17.809733 [debug] [Thread-1 (]: On model.OnlineRetail_dbt_Transform.rfm_segmentation: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.rfm_segmentation"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`rfm_segmentation`
+  OPTIONS()
+  as WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`dim_customers`
+),
+rfm_scores AS (
+    SELECT 
+    customer_id,
+    recency_days,
+    nb_orders,
+    country,
+    total_revenue,
+    -- Calcul des scores RFM
+    -- Recency score: plus c'est récent, mieux c'est
+    ntile(5) over (order by recency_days asc) as r_score,
+
+        -- Frequency score
+    ntile(5) over (order by nb_orders desc) as f_score,
+
+        -- Monetary score
+    ntile(5) over (order by total_revenue desc) as m_score
+    FROM source
+), 
+rfm_segments AS (
+    SELECT *,
+    CASE 
+        WHEN r_score >= 4 AND f_score >= 4 AND m_score >= 4 THEN 'VIP'
+        WHEN r_score >= 3 AND f_score >= 3 THEN 'Loyal'
+        WHEN r_score <= 2 AND f_score >= 3 THEN 'At Risk'
+        WHEN r_score <= 2 THEN 'Low Value'
+        ELSE 'Regular' 
+        END AS customer_segment
+    FROM rfm_scores
+)
+SELECT * FROM rfm_segments;
+
+
+[0m16:14:17.815441 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242992C83D0>]}
+[0m16:14:17.816485 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:14:17.817794 [info ] [Thread-3 (]: 8 of 11 OK created sql view model ecommerce_raw.top_products ................... [[32mCREATE VIEW (0 processed)[0m in 1.54s]
+[0m16:14:17.842677 [debug] [Thread-3 (]: Finished running node model.OnlineRetail_dbt_Transform.top_products
+[0m16:14:18.549998 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:e53e21e7-bcde-430d-9e87-c0fef1175bf5&page=queryresults
+[0m16:14:18.549998 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:5a20cf9a-ebec-4a84-8c41-d40600161db9&page=queryresults
+[0m16:14:18.976128 [debug] [Thread-2 (]: SQL status: OK in 0.426 seconds
+[0m16:14:18.976128 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242994B3CD0>]}
+[0m16:14:18.976128 [info ] [Thread-2 (]: 9 of 11 OK created sql view model ecommerce_raw.kpi_customers .................. [[32mCREATE VIEW (0 processed)[0m in 1.25s]
+[0m16:14:18.987508 [debug] [Thread-2 (]: Finished running node model.OnlineRetail_dbt_Transform.kpi_customers
+[0m16:14:19.045826 [debug] [Thread-1 (]: SQL status: OK in 0.484 seconds
+[0m16:14:19.052018 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242993C9E10>]}
+[0m16:14:19.052018 [info ] [Thread-1 (]: 10 of 11 OK created sql view model ecommerce_raw.rfm_segmentation .............. [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m16:14:19.054067 [debug] [Thread-1 (]: Finished running node model.OnlineRetail_dbt_Transform.rfm_segmentation
+[0m16:14:19.055414 [debug] [Thread-4 (]: Began running node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m16:14:19.056247 [info ] [Thread-4 (]: 11 of 11 START sql view model ecommerce_raw.at_risk_customers .................. [RUN]
+[0m16:14:19.057323 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.OnlineRetail_dbt_Transform.kpi_global, now model.OnlineRetail_dbt_Transform.at_risk_customers)
+[0m16:14:19.058509 [debug] [Thread-4 (]: Began compiling node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m16:14:19.062617 [debug] [Thread-4 (]: Writing injected SQL for node "model.OnlineRetail_dbt_Transform.at_risk_customers"
+[0m16:14:19.064636 [debug] [Thread-4 (]: Began executing node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m16:14:19.070191 [debug] [Thread-4 (]: Writing runtime sql for node "model.OnlineRetail_dbt_Transform.at_risk_customers"
+[0m16:14:19.072862 [debug] [Thread-4 (]: On model.OnlineRetail_dbt_Transform.at_risk_customers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "OnlineRetail_dbt_Transform", "target_name": "dev", "node_id": "model.OnlineRetail_dbt_Transform.at_risk_customers"} */
+
+
+  create or replace view `onlineretail-491719`.`ecommerce_raw`.`at_risk_customers`
+  OPTIONS()
+  as --Analysis to identify at-risk customers based on their purchasing behavior. 
+WITH source AS (
+    SELECT * FROM `onlineretail-491719`.`ecommerce_raw`.`rfm_segmentation`
+),
+at_risk_customers AS (
+    SELECT 
+        customer_id, 
+        total_revenue,
+        nb_orders,
+        recency_days,
+        customer_segment,
+        country
+    FROM source
+    WHERE customer_segment = 'At Risk'
+    AND nb_orders >= 3 -- Pour ne orendre en compte que les clients réguliers
+)
+SELECT * FROM at_risk_customers
+ORDER BY total_revenue DESC;
+
+
+[0m16:14:19.073914 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m16:14:20.100019 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=onlineretail-491719&j=bq:US:299eff97-483e-4309-b5c1-cae94c1887f4&page=queryresults
+[0m16:14:20.589319 [debug] [Thread-4 (]: SQL status: OK in 0.484 seconds
+[0m16:14:20.615087 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fac72a1c-5091-46cd-8769-965edef9f302', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024299444640>]}
+[0m16:14:20.616834 [info ] [Thread-4 (]: 11 of 11 OK created sql view model ecommerce_raw.at_risk_customers ............. [[32mCREATE VIEW (0 processed)[0m in 1.56s]
+[0m16:14:20.618843 [debug] [Thread-4 (]: Finished running node model.OnlineRetail_dbt_Transform.at_risk_customers
+[0m16:14:20.618843 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'list_onlineretail-491719' was properly closed.
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'list_onlineretail-491719_ecommerce_raw' was properly closed.
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.rfm_segmentation' was properly closed.
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.top_products' was properly closed.
+[0m16:14:20.653780 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.at_risk_customers' was properly closed.
+[0m16:14:20.669252 [debug] [MainThread]: Connection 'model.OnlineRetail_dbt_Transform.kpi_customers' was properly closed.
+[0m16:14:20.669252 [info ] [MainThread]: 
+[0m16:14:20.670014 [info ] [MainThread]: Finished running 11 view models in 0 hours 0 minutes and 9.07 seconds (9.07s).
+[0m16:14:20.673520 [debug] [MainThread]: Command end result
+[0m16:14:20.719936 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\manifest.json
+[0m16:14:20.723580 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\semantic_manifest.json
+[0m16:14:20.733690 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\seynabou\Documents\OnlineRetail\OnlineRetail_dbt_Transform\target\run_results.json
+[0m16:14:20.733690 [info ] [MainThread]: 
+[0m16:14:20.734686 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:14:20.735980 [info ] [MainThread]: 
+[0m16:14:20.737004 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m16:14:20.738004 [debug] [MainThread]: Command `dbt run` succeeded at 16:14:20.738004 after 13.91 seconds
+[0m16:14:20.739093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024285254D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024286523F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024298F05690>]}
+[0m16:14:20.739093 [debug] [MainThread]: Flushing usage events
+[0m16:14:21.234380 [debug] [MainThread]: An error was encountered while trying to flush usage events

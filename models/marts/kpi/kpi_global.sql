@@ -11,7 +11,10 @@ global_KPIs AS (
     count(distinct invoice_id) AS total_orders,
     count(distinct customer_id) AS total_customers,
     -- panier moyen global
-    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value
+    sum(line_amount) / nullif(count(distinct invoice_id), 0) as avg_order_value,
+    -- country
+    country
     FROM source
+    GROUP BY country
 )
 SELECT * FROM global_KPIs

@@ -8,7 +8,8 @@ customer_KPIs AS (
     total_revenue,
     nb_orders,
     avg_order_value,
-    recency_days
+    recency_days, 
+    country
     FROM source
 
 )

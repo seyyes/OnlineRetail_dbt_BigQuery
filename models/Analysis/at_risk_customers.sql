@@ -8,7 +8,8 @@ at_risk_customers AS (
         total_revenue,
         nb_orders,
         recency_days,
-        customer_segment
+        customer_segment,
+        country
     FROM source
     WHERE customer_segment = 'At Risk'
     AND nb_orders >= 3 -- Pour ne orendre en compte que les clients réguliers
