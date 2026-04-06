@@ -6,6 +6,7 @@ rfm_scores AS (
     customer_id,
     recency_days,
     nb_orders,
+    country,
     total_revenue,
     -- Calcul des scores RFM
     -- Recency score: plus c'est récent, mieux c'est
