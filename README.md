@@ -6,14 +6,15 @@ Analyze an e-commerce dataset to identify opportunities to:
 - Improve revenue performance
 - Increase customer value
 - Detect risky customer behavior
+- Perform RFM Analysis
 
 ---
 
 ## Data Stack
 
-- **BigQuery** → Data warehouse
-- **dbt** → Data transformation & modeling
-- **Looker Studio** → Dashboard & visualization
+- **BigQuery** : Data warehouse
+- **dbt** : Data transformation & modeling
+- **Looker Studio** : Dashboard & visualization
 
 ---
 
@@ -89,7 +90,8 @@ Features:
 - Product performance
 - Return analysis
 - At-risk customers
-
+- View dashboard: https://lookerstudio.google.com/s/hSzpo94YlbQ
+- Dashboard preview in (snapshots/Performance_Insights_Dashboard.png)
 ---
 
 ## Skills Demonstrated
