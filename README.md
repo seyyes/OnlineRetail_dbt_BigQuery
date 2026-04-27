@@ -2,7 +2,7 @@
 
 ## Key Result
 
-More than 80% of total revenue ($19.3M) is generated from a single country (UK), while a portion of high-value customers is at risk and several products show abnormal return rates (>100%).
+More than 80% of total revenue ($19.3M) is generated from a single country (UK), while a portion of high-value customers is at risk.
 
 ---
 
@@ -154,7 +154,6 @@ From the dashboard:
 ## 9. Dashboard
 
 Interactive dashboard built in Looker Studio.
-- ![Dashboard](../OnlineRetail_dbt_Transform/assets/image.png)
 
 ### Main components:
 
@@ -167,7 +166,7 @@ Interactive dashboard built in Looker Studio.
 
 Dashboard link:  
 https://lookerstudio.google.com/s/hSzpo94YlbQ  
-
+- ![Dashboard](https://github.com/seyyes/OnlineRetail_dbt_BigQuery/blob/main/assets/image.png)
 ---
 
 ## 10. Key Insights
